@@ -371,6 +371,8 @@ class WebviewManager {
         webView.getSettings().setAllowUniversalAccessFromFileURLs(allowFileURLs);
 
         webView.getSettings().setUseWideViewPort(useWideViewPort);
+
+        webView.getSettings().setMediaPlaybackRequiresUserGesture(false);
         
         // Handle debugging
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
